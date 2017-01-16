@@ -1,6 +1,6 @@
 {
   "name": "my-app-angular2",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
@@ -23,8 +23,9 @@
     "@angular/router": "^3.3.1",
     "core-js": "^2.4.1",
     "rxjs": "^5.0.1",
+    "toastr-ng2": "^4.0.0",
     "ts-helpers": "^1.1.1",
-    "zone.js": "^0.7.2"
+    "zone.js": "0.7.2"
   },
   "devDependencies": {
     "@angular/compiler-cli": "^2.3.1",

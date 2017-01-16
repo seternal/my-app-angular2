@@ -1,3 +1,24 @@
 <h1>
   {{title}}
 </h1>
+<div class="panel panel-default">
+  <div class="panel-heading"><strong><span class="glyphicon glyphicon-th"></span>- Informations de test.</strong></div>
+</div>
+<ul>
+  <li *ngFor="let information of informations">
+    {{information.nom}}
+  </li>
+</ul>
+<div class="container">
+  <section class="row">
+    <div class="col-lg-12">
+      <br>
+      <p>Ajouter une information.</p>
+      <form>
+        <input #newInformation (keyup.enter)="addInformation (newInformation.value)" (blur)="addInformation (newInformation.value);newInformation.value=''">
+        <button (click)="addInformation(newInformation.value);newInformation.value=''">Ajouter</button>
+      </form>
+      </div>
+      </section>
+</div>
+<app-chronometre></app-chronometre>
